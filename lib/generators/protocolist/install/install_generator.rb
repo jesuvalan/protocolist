@@ -55,7 +55,7 @@ module Protocolist
         CONTENT
 
 
-        migration_template "migration.rb", "db/migrate/create_activities"
+        migration_template "migration.rb", "db/migrate/create_activities.rb"
         invoke "active_record:model", [model_classname], migration: false
 
         if model_exists?
