@@ -2,7 +2,7 @@ require "spec_helper"
 
 class FirestartersController
   #stub before filter
-  def self.before_filter *args
+  def self.before_action *args
   end
 
   include Protocolist::ControllerAdditions
